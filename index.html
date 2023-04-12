@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F5F5F5;
+      }
+      
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+      }
+      
+      .nav {
+        display: flex;
+      }
+      
+      .nav__item {
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        text-decoration: none;
+      }
+      
+      .nav__item:hover {
+        color: #0066CC;
+      }
+      
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 20px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card {
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+      }
+      
+      .card__title {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+      }
+      
+      .card__text {
+        font-size: 16px;
+        color: #666666;
+      }
+        
+      @media (max-width: 768px) {
+        .header {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        
+        .nav {
+          margin-top: 20px;
+        }
+        
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>  
+    <div class="header">
+
+      <div class="logo">My Website</div>
+
+      <nav class="nav">
+        <a href="home.html" class="nav__item">Home</a>
+        <a href="about.html" class="nav__item">About</a>
+        <a href="services.html" class="nav__item">Services</a>
+        <a href="contact.html" class="nav__item">Contact</a>
+      </nav>
+      </div>
+    </body>
+
+<div class="content">
+  <!-- Карточка 1 -->
+  <div class="card">
+    <div class="card__title">Card 1</div>
+    <div class="card__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac ante massa. Ut suscipit dolor vel libero accumsan, at laoreet est vestibulum. Sed eu ipsum vel dolor tristique consectetur.
+    </div>
+  </div>
+    
+  <div class="card">
+    <div class="card__title">Card 2</div>
+    <div class="card__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac ante massa. Ut suscipit dolor vel libero accumsan, at laoreet est vestibulum. Sed eu ipsum vel dolor tristique consectetur.
+    </div>
+  </div>
+    
+  <div class="card">
+    <div class="card__title">Card 3</div>
+    <div class="card__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac ante massa. Ut suscipit dolor vel libero accumsan, at laoreet est vestibulum. Sed eu ipsum vel dolor tristique consectetur.
+    </div>
+  </div>
+    
+  <div class="card">
+    <div class="card__title">Card 4</div>
+    <div class="card__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac ante massa. Ut suscipit dolor vel libero accumsan, at laoreet est vestibulum. Sed eu ipsum vel dolor tristique consectetur.
+    </div>
+  </div>
+</div>
