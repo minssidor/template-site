@@ -1,0 +1,78 @@
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Стили для основного контента */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .card {
+    flex-basis: 100%;
+  }
+}
