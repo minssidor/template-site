@@ -76,3 +76,121 @@ nav a:hover {
     flex-basis: 100%;
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Логотип */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Навигация */
+.nav {
+  display: none;
+}
+
+/* Меню-бургер */
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-icon__line {
+  width: 20px;
+  height: 2px;
+  background-color: #333333;
+  border-radius: 2px;
+}
+
+/* Основной контент */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Карточка */
+.card {
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.card__text {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Медиа-запросы */
+@media (min-width: 768px) {
+  /* Навигация */
+  .nav {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  .nav__item:hover {
+    color: #0066CC;
+  }
+
+  /* Карточка */
+  .card {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Шапка */
+  .header {
+    flex-wrap: nowrap;
+  }
+
+  /* Навигация */
+  .nav {
+    margin-top: 0;
+  }
+}
